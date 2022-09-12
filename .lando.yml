@@ -1,0 +1,19 @@
+name: gitlab-feature-flags-laravel
+recipe: laravel
+config:
+  webroot: public
+  php: '8.1'
+  database: mariadb
+services:
+  mailhog:
+    type: mailhog
+    portforward: 8025
+    hogfrom:
+      - appserver
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+proxy:
+  pma:
+    - pma.lndo.site
