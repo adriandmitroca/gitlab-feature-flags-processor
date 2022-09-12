@@ -1,11 +1,15 @@
 ## GitLab Feature Flag CLI Processor
 
+![example-censored](https://user-images.githubusercontent.com/3842935/189751469-846dfe1d-3473-47bc-bdd0-33d54e96b218.png)
+
 Small Laravel application that fetches and processes
 feature flag details (including authors and date of creation)
 that GitLab doesn't provide in their UI.
 
 It's especially useful to find owners and find old, obsolete
 feature flags easily, within few clicks of the mouse.
+
+**Disclaimer:** It's 30 minutes project so don't expect high code quality, code coverage or reasonable maintenance.
 
 ## Available Commands
 
